@@ -108,7 +108,7 @@ Usage:
 ```python
 api = jamf.JamfUAPI(url, username, password, timeout=180, verify=True, disable_warnings=False)
 # Accessing .../upai/v1/scripts/id/100
-api_data = api.get_data('v', 'scripts', 'id', 100)
+api_data = api.get_data('v1', 'scripts', 'id', 100)
 if api_data.success:
     print(api_data.data['results'])
 ```
@@ -116,7 +116,7 @@ or
 ```python
 with jamf.JamfUAPI(url, username, password, timeout=180, verify=True, disable_warnings=False) as api:
     # Accessing .../upai/v1/scripts/id/100
-    api_data = api.get_data('v', 'scripts', 'id', 100)
+    api_data = api.get_data('v1', 'scripts', 'id', 100)
     if api_data.success:
         print(api_data.data['results'])
 ```
