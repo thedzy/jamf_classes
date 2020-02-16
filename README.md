@@ -135,7 +135,6 @@ class JamfUAPI:
         if you understand the risks and wish to disable these warnings, you can use disable_warnings()
         :return: (bool) Current/new setting
         """
-        urllib3.disable_warnings()
 
     def get_login(self):
         """
