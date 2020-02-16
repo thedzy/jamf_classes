@@ -302,7 +302,7 @@ class JamfUAPI:
         if self.__disable_warnings:
             urllib3.disable_warnings()
 
-        self._login()
+        self.__login()
 
     def __del__(self):
         """
@@ -335,7 +335,7 @@ class JamfUAPI:
         """
         self.__del__()
 
-    def _login(self):
+    def __login(self):
         """
         Initialise the login
         :return: (APIResponse)
